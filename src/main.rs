@@ -15,7 +15,7 @@ fn main() {
             Err(err) => panic!("Failed To Create Server On Port {}", port),
         };
         let mut buffer: [u8; 1024] = [0; 1024];
-        let html="<!DOCTYPE html><head><title>Document</title></head><body><h1>Hello, Rust!</h1><br><a href='https://github.com/0xN1nja' target='_blank'>0xN1nja</a></body></html>";
+        let html="<!DOCTYPE html><head><title>Document</title></head><body><h1>Hello, Rust!</h1><br><a href='https://github.com/0xN1nja' target='_blank'>Abhimanyu Sharma</a></body></html>";
         let response = format!("HTTP 1.1 200 OK\r\n\r\n{}", html);
         stream.read(&mut buffer);
         println!(
